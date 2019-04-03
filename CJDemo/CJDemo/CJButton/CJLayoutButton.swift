@@ -192,6 +192,7 @@ extension CJLayoutButton {
     
     private func layoutSubviewsForImagePositonBottom() {
         if let label = self.titleLabel, let imageView = self.imageView {
+            print(label)
             if self.contentVerticalAlignment == .top {
                 self.titleLabel?.frame.origin.y = 0
                 self.titleLabel?.center.x = self.frame.width * 0.5
