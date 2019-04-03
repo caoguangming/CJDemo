@@ -14,6 +14,10 @@
 		4DA564EA225351F400DC50AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA564E8225351F400DC50AF /* LaunchScreen.storyboard */; };
 		4DA564F32253532000DC50AF /* CJButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA564F22253532000DC50AF /* CJButtonViewController.swift */; };
 		4DA564F52253539200DC50AF /* CJLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA564F42253539100DC50AF /* CJLayoutButton.swift */; };
+		4DB6DD43225496F2004FD21F /* CJParseUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6DD42225496F2004FD21F /* CJParseUtilities.swift */; };
+		4DB6DD452254975F004FD21F /* CJParseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6DD442254975F004FD21F /* CJParseViewController.swift */; };
+		4DB6DD47225497DD004FD21F /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6DD46225497DD004FD21F /* Data.json */; };
+		4DB6DD4B2254A89D004FD21F /* CJParseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6DD4A2254A89D004FD21F /* CJParseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		4DA564EB225351F400DC50AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA564F22253532000DC50AF /* CJButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJButtonViewController.swift; sourceTree = "<group>"; };
 		4DA564F42253539100DC50AF /* CJLayoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJLayoutButton.swift; sourceTree = "<group>"; };
+		4DB6DD42225496F2004FD21F /* CJParseUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJParseUtilities.swift; sourceTree = "<group>"; };
+		4DB6DD442254975F004FD21F /* CJParseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJParseViewController.swift; sourceTree = "<group>"; };
+		4DB6DD46225497DD004FD21F /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		4DB6DD4A2254A89D004FD21F /* CJParseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJParseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,10 @@
 		4DA564DE225351F300DC50AF /* CJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4DA564F12253525A00DC50AF /* CJButton */,
+				4DB6DD41225496E3004FD21F /* CJParse */,
 				4DA564DF225351F300DC50AF /* AppDelegate.swift */,
 				4DA564E1225351F300DC50AF /* ViewController.swift */,
-				4DA564F22253532000DC50AF /* CJButtonViewController.swift */,
-				4DA564F12253525A00DC50AF /* CJButton */,
 				4DA564E3225351F300DC50AF /* Main.storyboard */,
 				4DA564E6225351F400DC50AF /* Assets.xcassets */,
 				4DA564E8225351F400DC50AF /* LaunchScreen.storyboard */,
@@ -73,9 +81,37 @@
 		4DA564F12253525A00DC50AF /* CJButton */ = {
 			isa = PBXGroup;
 			children = (
-				4DA564F42253539100DC50AF /* CJLayoutButton.swift */,
+				4DB6DD48225497E4004FD21F /* Kit */,
+				4DA564F22253532000DC50AF /* CJButtonViewController.swift */,
 			);
 			path = CJButton;
+			sourceTree = "<group>";
+		};
+		4DB6DD41225496E3004FD21F /* CJParse */ = {
+			isa = PBXGroup;
+			children = (
+				4DB6DD49225497FA004FD21F /* Kit */,
+				4DB6DD46225497DD004FD21F /* Data.json */,
+				4DB6DD442254975F004FD21F /* CJParseViewController.swift */,
+				4DB6DD4A2254A89D004FD21F /* CJParseModel.swift */,
+			);
+			path = CJParse;
+			sourceTree = "<group>";
+		};
+		4DB6DD48225497E4004FD21F /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				4DA564F42253539100DC50AF /* CJLayoutButton.swift */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		4DB6DD49225497FA004FD21F /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				4DB6DD42225496F2004FD21F /* CJParseUtilities.swift */,
+			);
+			path = Kit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +175,7 @@
 				4DA564EA225351F400DC50AF /* LaunchScreen.storyboard in Resources */,
 				4DA564E7225351F400DC50AF /* Assets.xcassets in Resources */,
 				4DA564E5225351F300DC50AF /* Main.storyboard in Resources */,
+				4DB6DD47225497DD004FD21F /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DA564F32253532000DC50AF /* CJButtonViewController.swift in Sources */,
+				4DB6DD452254975F004FD21F /* CJParseViewController.swift in Sources */,
+				4DB6DD43225496F2004FD21F /* CJParseUtilities.swift in Sources */,
+				4DB6DD4B2254A89D004FD21F /* CJParseModel.swift in Sources */,
 				4DA564E2225351F300DC50AF /* ViewController.swift in Sources */,
 				4DA564F52253539200DC50AF /* CJLayoutButton.swift in Sources */,
 				4DA564E0225351F300DC50AF /* AppDelegate.swift in Sources */,
