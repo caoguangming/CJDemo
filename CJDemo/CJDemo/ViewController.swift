@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     var tableView: UITableView!
     
-    private let dataArray = ["自定义按钮"]
+    private let dataArray = ["自定义按钮", "数据解析及持久化"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +44,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:// 自定义按钮
             navigationController?.pushViewController(CJButtonViewController(), animated: true)
+        case 1:// 数据解析及持久化
+            navigationController?.pushViewController(CJParseViewController(), animated: true)
         default:
             break
         }
