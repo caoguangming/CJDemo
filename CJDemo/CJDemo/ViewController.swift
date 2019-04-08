@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(orientationChanged(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
+        
+    }
+    
+    @objc func orientationChanged(_ noti: Notification) {
+        
+        print(self.view.safeAreaLayoutGuide.layoutFrame)
     }
 
 
