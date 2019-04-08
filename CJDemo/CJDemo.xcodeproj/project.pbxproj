@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4D2921332255B73900AC5447 /* CJLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2921322255B73900AC5447 /* CJLayout.swift */; };
 		4D5D0754225ADDB100BE525F /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D0753225ADDB100BE525F /* UIView+extension.swift */; };
+		4D5D0756225ADF7900BE525F /* CJCalculateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D0755225ADF7900BE525F /* CJCalculateUtilities.swift */; };
+		4D5D0759225AE34800BE525F /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D0758225AE34800BE525F /* UIColor+extension.swift */; };
+		4D5D075B225AE3A800BE525F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D075A225AE3A800BE525F /* UIImage+Extension.swift */; };
 		4DA564E0225351F300DC50AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA564DF225351F300DC50AF /* AppDelegate.swift */; };
 		4DA564E2225351F300DC50AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA564E1225351F300DC50AF /* ViewController.swift */; };
 		4DA564E5225351F300DC50AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA564E3225351F300DC50AF /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		4D2921322255B73900AC5447 /* CJLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJLayout.swift; sourceTree = "<group>"; };
 		4D5D0753225ADDB100BE525F /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		4D5D0755225ADF7900BE525F /* CJCalculateUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJCalculateUtilities.swift; sourceTree = "<group>"; };
+		4D5D0758225AE34800BE525F /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		4D5D075A225AE3A800BE525F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		4DA564DC225351F300DC50AF /* CJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA564DF225351F300DC50AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA564E1225351F300DC50AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +62,18 @@
 			children = (
 				4D2921322255B73900AC5447 /* CJLayout.swift */,
 				4D5D0753225ADDB100BE525F /* UIView+extension.swift */,
+				4D5D0755225ADF7900BE525F /* CJCalculateUtilities.swift */,
 			);
 			path = CJLayout;
+			sourceTree = "<group>";
+		};
+		4D5D0757225AE33F00BE525F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4D5D075A225AE3A800BE525F /* UIImage+Extension.swift */,
+				4D5D0758225AE34800BE525F /* UIColor+extension.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		4DA564D3225351F300DC50AF = {
@@ -79,6 +95,7 @@
 		4DA564DE225351F300DC50AF /* CJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4D5D0757225AE33F00BE525F /* Others */,
 				4D2921312255B71B00AC5447 /* CJLayout */,
 				4DA564F12253525A00DC50AF /* CJButton */,
 				4DB6DD41225496E3004FD21F /* CJParse */,
@@ -203,11 +220,14 @@
 				4DA564F32253532000DC50AF /* CJButtonViewController.swift in Sources */,
 				4DB6DD452254975F004FD21F /* CJParseViewController.swift in Sources */,
 				4DB6DD43225496F2004FD21F /* CJParseUtilities.swift in Sources */,
+				4D5D075B225AE3A800BE525F /* UIImage+Extension.swift in Sources */,
 				4D5D0754225ADDB100BE525F /* UIView+extension.swift in Sources */,
 				4DB6DD4B2254A89D004FD21F /* CJParseModel.swift in Sources */,
 				4D2921332255B73900AC5447 /* CJLayout.swift in Sources */,
 				4DA564E2225351F300DC50AF /* ViewController.swift in Sources */,
 				4DA564F52253539200DC50AF /* CJLayoutButton.swift in Sources */,
+				4D5D0759225AE34800BE525F /* UIColor+extension.swift in Sources */,
+				4D5D0756225ADF7900BE525F /* CJCalculateUtilities.swift in Sources */,
 				4DA564E0225351F300DC50AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
