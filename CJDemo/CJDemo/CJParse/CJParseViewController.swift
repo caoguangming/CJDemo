@@ -102,7 +102,7 @@ extension CJParseViewController {
     
     @objc private func onClickParseJsonButton() {
         model = CJParseUtilities.decodeJSONData(type: CJParseModel.self, data: jsonData)
-        print(model)
+        
     }
     
     @objc private func onClickWritePlistButton() {
@@ -115,8 +115,8 @@ extension CJParseViewController {
     }
     
     @objc private func onClickModelPlistButton() {
-        let dataModel = CJParseUtilities.decodePlist(CJParseModel.self, key: "parse")
-        print(dataModel)
+        _ = CJParseUtilities.decodePlist(CJParseModel.self, key: "parse")
+        
     }
     
     @objc private func onClickArchiveButton() {
@@ -129,7 +129,7 @@ extension CJParseViewController {
     }
     
     @objc private func onClickUnarchiveButton() {
-        let dataModel = CJParseUtilities.unarchive(CJParseModel.self, "archiveParse")
-        print(dataModel)
+        _ = CJParseUtilities.unarchive(CJParseModel.self, "archiveParse")
+        
     }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2018 LZY. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UIImage {
     /// 根据颜色生成图片

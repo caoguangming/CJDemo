@@ -14,7 +14,7 @@ final class CJCalculateUtilities {
         guard let text = text else {
             return CGSize.zero
         }
-        
+
         let size = text.boundingRect(with: CGSize(width: width ?? CGFloat.greatestFiniteMagnitude, height: height ?? CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes ?? [NSAttributedString.Key.font : UIFont.systemFont(ofSize: font)], context: nil).size
         return CGSize(width: width ?? size.width, height: height ?? size.height)
     }
