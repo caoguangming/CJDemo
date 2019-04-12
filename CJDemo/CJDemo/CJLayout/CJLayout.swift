@@ -26,4 +26,5 @@ final class CJLayout {
     public class func font(pt: CGFloat) -> CGFloat {
         return pt * CJLayout.widthScale
     }
+    
 }

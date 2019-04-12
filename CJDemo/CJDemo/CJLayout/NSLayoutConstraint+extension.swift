@@ -10,7 +10,6 @@ import UIKit
 
 extension NSLayoutConstraint {
     
-    
     public func startActive() {
         self.isActive = true
     }
@@ -20,7 +19,7 @@ extension NSLayoutConstraint {
     }
     
     public func updateConstraint(newConstraint: NSLayoutConstraint) {
-        self.isActive = false
-        newConstraint.isActive = true
+        self.endActive()
+        newConstraint.startActive()
     }
 }
