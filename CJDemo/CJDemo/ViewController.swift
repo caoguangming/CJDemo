@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     @objc func orientationChanged(_ noti: Notification) {
         
-        print(self.view.safeAreaLayoutGuide.layoutFrame)
+//        print(self.view.safeAreaLayoutGuide.layoutFrame)
     }
 
 

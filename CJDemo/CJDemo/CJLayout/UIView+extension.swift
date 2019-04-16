@@ -9,43 +9,20 @@
 import UIKit
 
 extension UIView {
+    var cj_layoutMargins: UIEdgeInsets {
+        if #available(iOS 11.0, *) {
+            return self.safeAreaInsets
+        } else {
+            return UIEdgeInsets(top: self.layoutMargins.top, left: self.layoutMargins.left - 16, bottom: self.layoutMargins.bottom, right: self.layoutMargins.right - 16)
+        }
+    }
+    
+    
     var cj_safe_topAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.topAnchor
         } else {
-            return self.topAnchor
-        }
-    }
-    
-    var cj_safe_leadingAnchor: NSLayoutXAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaLayoutGuide.leadingAnchor
-        } else {
-            return self.leadingAnchor
-        }
-    }
-    
-    var cj_safe_trailingAnchor: NSLayoutXAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaLayoutGuide.trailingAnchor
-        } else {
-            return self.trailingAnchor
-        }
-    }
-    
-    var cj_safe_leftAnchor: NSLayoutXAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaLayoutGuide.leftAnchor
-        } else {
-            return self.leftAnchor
-        }
-    }
-    
-    var cj_safe_rightAnchor: NSLayoutXAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaLayoutGuide.rightAnchor
-        } else {
-            return self.rightAnchor
+            return self.layoutMarginsGuide.topAnchor
         }
     }
     
@@ -53,15 +30,7 @@ extension UIView {
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.bottomAnchor
         } else {
-            return self.bottomAnchor
-        }
-    }
-    
-    var cj_safe_widthAnchor: NSLayoutDimension {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaLayoutGuide.widthAnchor
-        } else {
-            return self.widthAnchor
+            return self.layoutMarginsGuide.bottomAnchor
         }
     }
     
@@ -69,24 +38,69 @@ extension UIView {
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.heightAnchor
         } else {
-            return self.heightAnchor
+            return self.layoutMarginsGuide.heightAnchor
         }
     }
     
-    var cj_safe_centerXAnchor: NSLayoutXAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaLayoutGuide.centerXAnchor
-        } else {
-            return self.centerXAnchor
-        }
-    }
     
-    var cj_safe_centerYAnchor: NSLayoutYAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaLayoutGuide.centerYAnchor
-        } else {
-            return self.centerYAnchor
-        }
-    }
+    
+    
+//    var cj_safe_leadingAnchor: NSLayoutXAxisAnchor {
+//        if #available(iOS 11.0, *) {
+//            return self.safeAreaLayoutGuide.leadingAnchor
+//        } else {
+//            return self.leadingAnchor
+//        }
+//    }
+//
+//    var cj_safe_trailingAnchor: NSLayoutXAxisAnchor {
+//        if #available(iOS 11.0, *) {
+//            return self.safeAreaLayoutGuide.trailingAnchor
+//        } else {
+//            return self.trailingAnchor
+//        }
+//    }
+//
+//    var cj_safe_leftAnchor: NSLayoutXAxisAnchor {
+//        if #available(iOS 11.0, *) {
+//            return self.safeAreaLayoutGuide.leftAnchor
+//        } else {
+//            return self.leftAnchor
+//        }
+//    }
+//
+//    var cj_safe_rightAnchor: NSLayoutXAxisAnchor {
+//        if #available(iOS 11.0, *) {
+//            return self.safeAreaLayoutGuide.rightAnchor
+//        } else {
+//            return self.rightAnchor
+//        }
+//    }
+//
+//
+//
+//    var cj_safe_widthAnchor: NSLayoutDimension {
+//        if #available(iOS 11.0, *) {
+//            return self.safeAreaLayoutGuide.widthAnchor
+//        } else {
+//            return self.widthAnchor
+//        }
+//    }
+//
+//    var cj_safe_centerXAnchor: NSLayoutXAxisAnchor {
+//        if #available(iOS 11.0, *) {
+//            return self.safeAreaLayoutGuide.centerXAnchor
+//        } else {
+//            return self.centerXAnchor
+//        }
+//    }
+//
+//    var cj_safe_centerYAnchor: NSLayoutYAxisAnchor {
+//        if #available(iOS 11.0, *) {
+//            return self.safeAreaLayoutGuide.centerYAnchor
+//        } else {
+//            return self.centerYAnchor
+//        }
+//    }
     
 }
